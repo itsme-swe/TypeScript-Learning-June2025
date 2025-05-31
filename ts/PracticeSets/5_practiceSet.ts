@@ -22,6 +22,12 @@ class BankAccount {
   }
 }
 
-const userOne = new BankAccount("505123", 500000);
+const userOne = new BankAccount("505123", 50000);
 
 console.log(userOne.getBalance()); // 50000
+
+userOne.deposit(1000);
+
+userOne.withdraw(10000);
+
+console.log(userOne.getBalance());  // 41000
