@@ -1,5 +1,5 @@
 /*
-🔸 getters ⇨ are used toi fetch the value
+🔸 getters ⇨ are used to fetch the value
 
 🔸 setters ⇨ are used to set the value
 */
