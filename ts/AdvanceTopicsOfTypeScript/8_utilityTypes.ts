@@ -52,8 +52,3 @@ const userOmitInfo: UserWithoutEmail = {
   name: "Juhi",
   age: 31,
 };
-
-// 6️⃣ Record <Keys, Types>
-
-
-// 7️⃣8️⃣

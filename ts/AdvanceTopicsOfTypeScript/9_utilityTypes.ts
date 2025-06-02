@@ -18,3 +18,16 @@ console.log(dogs.max); // { age: 5, breed: 'german' }
 dogs.angad.age = 6;
 
 console.log(dogs.angad); // { age: 6, breed: 'rotwieler' }
+
+// 7️⃣ Exclude<Type, ExcludedUnion>
+
+type Status = "success" | "pending" | "loading";
+
+type ExcludeError = Exclude<Status, "error">;
+
+const status1: ExcludeError = "success";
+
+console.log(status1);
+
+
+// 8️⃣ NonNullable<Type> Constructs a type by excluding null and undefined from Type.
