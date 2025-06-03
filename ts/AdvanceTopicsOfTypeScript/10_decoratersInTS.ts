@@ -20,18 +20,18 @@ There are five types of decorators we can use:
 */
 
 // 1️⃣ Class Decorator
-function Logger(constructor: Function) {
-  console.log(`Logging creation of class: ${constructor.name}`);
+
+function logger(target: any, ctx: ClassDecoratorContext) {
+  console.log("Logger decorator");
+  console.log(target);
+  console.log(ctx);
 }
 
-@Logger
-class People {
-  constructor(public name: string) {}
+@logger
+class NewPerson {
+  name: string = "Harsh";
+
+  greet(): void {
+    console.log(`Hi I am ${this.name}`);
+  }
 }
-
-const newP1 = new People("Harsh");
-
-console.log(newP1);
-
-// 2️⃣ Method Decorator
-
