@@ -20,7 +20,7 @@ console.log(obj1);
 //🌟 Creating Object using interface --- we use interface to define data types for object
 
 interface StudentInterface {
-  name: string;
+  readonly name: string;
   rollNo: number;
   subject: string;
   isPresent: boolean;
